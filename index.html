@@ -8,6 +8,8 @@
 <meta property="og:title" content="Argentina Citizenship by Investment | Bond and Partners">
 <meta property="og:description" content="Argentine citizenship from USD 350,000. Announced 2 October 2026, expected to open this quarter. Register your priority place.">
 <meta property="og:type" content="website">
+<!-- REMOVER esta linha quando o FORM_ENDPOINT estiver ligado e a pagina puder ser divulgada -->
+<meta name="robots" content="noindex,nofollow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -470,6 +472,8 @@ input::placeholder,textarea::placeholder{color:#5C6E88}
 .field.invalid .err{display:flex}
 .field.invalid input,.field.invalid select,.field.invalid textarea{border-color:var(--danger)}
 
+/* armadilha de robô, fora da tela e fora da ordem de tabulação */
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
 .submit-row{margin-top:clamp(30px,4vw,40px)}
 .btn[disabled]{opacity:.62;cursor:not-allowed;transform:none}
 .privacy{margin-top:18px;font-size:var(--t-micro);color:var(--text-low);max-width:56ch;line-height:1.55}
@@ -909,6 +913,10 @@ details .a{padding:0 clamp(40px,10vw,120px) 28px 0;color:var(--text-mid);font-si
                 <label for="notes">Anything we should know <span class="opt">(optional)</span></label>
                 <textarea id="notes" name="notes" rows="3"></textarea>
               </div>
+              <div class="hp" aria-hidden="true">
+                <label for="website">Do not fill this in</label>
+                <input id="website" name="website" type="text" tabindex="-1" autocomplete="off">
+              </div>
             </div>
           </fieldset>
 
@@ -1090,7 +1098,14 @@ const FORM_ENDPOINT = "";
       alert('We could not register your place just now. Please try again, or write to us directly.');
     }
 
-    if(!FORM_ENDPOINT){ setTimeout(done, 650); return; }
+    if(!FORM_ENDPOINT){
+      // Nada de confirmar um registro que nao aconteceu. Enquanto o backend
+      // nao estiver ligado, o visitante precisa saber que nao foi registrado.
+      btn.disabled = false;
+      btn.textContent = original;
+      alert('Priority registration opens shortly. Please try again in a moment, or contact Bond and Partners directly.');
+      return;
+    }
 
     fetch(FORM_ENDPOINT,{
       method:'POST',
