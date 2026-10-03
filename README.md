@@ -1,5 +1,10 @@
 # Landing page: Argentina CBI, Bond and Partners
 
+**No ar em https://leofranco97.github.io/bond-argentina-cbi/**
+Repositório: https://github.com/LeoFranco97/bond-argentina-cbi
+
+Para publicar uma alteração: copie esta pasta para `~/bond-argentina-cbi`, commite e dê push. O GitHub Pages republica sozinho em cerca de um minuto.
+
 Página única em inglês. HTML, CSS e JavaScript próprios, sem framework e sem build. Para publicar, basta subir a pasta `site/` inteira.
 
 ## Arquivos
@@ -15,6 +20,8 @@ site/
 As duas fotografias vêm do Unsplash por URL direta, então não há arquivo de imagem para subir. Se preferir hospedar as fotos no próprio domínio, baixe as duas URLs que aparecem no HTML e troque o `src`.
 
 ## Ligar o formulário, a única coisa que falta
+
+**Urgente agora que a página é pública.** Com o endpoint vazio o formulário confirma para o visitante mas não envia nada, então o lead se perde e a pessoa sai achando que se registrou.
 
 Abra `index.html`, procure por `FORM_ENDPOINT` perto do fim do arquivo e coloque o endereço entre as aspas:
 
