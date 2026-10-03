@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Argentine Citizenship by Investment | Bond and Partners</title>
+<meta name="description" content="Argentina has published the price of its citizenship by investment programme: USD 350,000. Expected to open in the fourth quarter of 2026. Bond and Partners holds your place in the first intake.">
+<meta property="og:title" content="Argentina Citizenship by Investment | Bond and Partners">
+<meta property="og:description" content="Argentine citizenship from USD 350,000. Announced 2 October 2026, expected to open this quarter. Register your priority place.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   TOKENS
+   ============================================================ */
+:root{
+  /* surfaces, darkest to lightest */
+  --ink-900:#060C17;   /* page base, near black navy */
+  --ink-850:#08111F;   /* alternating band */
+  --ink-800:#0C1829;   /* card */
+  --ink-750:#122238;   /* raised card */
+  --rule:#1B2E4A;      /* hairline */
+  --rule-soft:#13233A;
+
+  /* type */
+  --text-hi:#F3F6FA;
+  --text-mid:#AAB8CE;
+  --text-low:#7D90AC;
+
+  /* accent: muted brass, not bright yellow */
+  --gold:#C9A24A;
+  --gold-hi:#E0BC72;
+  --gold-dim:#8A6C2E;
+
+  /* status: warm clay, a notice and not an error */
+  --amber:#C08A70;
+  --amber-bg:rgba(192,138,112,.09);
+  --amber-rule:rgba(192,138,112,.30);
+  --danger:#E8897A;
+
+  /* type families */
+  --display:'Outfit',system-ui,-apple-system,sans-serif;
+  --body:'Inter',system-ui,-apple-system,sans-serif;
+
+  /* scale */
+  --t-hero:clamp(2.9rem,7.2vw,6.4rem);
+  --t-h2:clamp(2.1rem,4.4vw,3.9rem);
+  --t-h3:clamp(1.25rem,2vw,1.6rem);
+  --t-figure:clamp(2.6rem,5.6vw,4.6rem);
+  --t-lead:clamp(1.08rem,1.55vw,1.32rem);
+  --t-body:1.0625rem;
+  --t-small:.9375rem;
+  --t-micro:.8125rem;
+  --t-eyebrow:.75rem;
+
+  /* layout */
+  --maxw:1240px;
+  --gutter:clamp(20px,5vw,72px);
+  --sect:clamp(72px,10vw,150px);
+
+  /* celeste da bandeira argentina, usado só como acento */
+  --celeste:#75AADB;
+
+  /* raios */
+  --r-btn:999px;
+  --r-field:12px;
+  --r-card:12px;
+
+  --ease:cubic-bezier(.22,.61,.36,1);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--ink-900);color:var(--text-hi);
+  font-family:var(--body);font-size:var(--t-body);line-height:1.62;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);font-weight:500;margin:0;text-wrap:balance}
+p{margin:0}
+
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--gutter)}
+.section{padding:var(--sect) 0}
+.band{background:var(--ink-850)}
+
+.eyebrow{
+  font-family:var(--body);font-size:var(--t-eyebrow);font-weight:600;
+  letter-spacing:.17em;text-transform:uppercase;color:var(--gold);
+  margin:0 0 20px;display:flex;align-items:center;gap:12px;
+}
+.eyebrow::before{content:"";width:28px;height:1px;background:var(--gold-dim);flex:none}
+
+h2{font-size:var(--t-h2);line-height:1.04;letter-spacing:-.02em;}
+.lead{font-size:var(--t-lead);line-height:1.6;color:var(--text-mid);max-width:62ch;margin-top:24px}
+
+/* ============================================================
+   NAV
+   ============================================================ */
+.nav{
+  position:absolute;top:0;left:0;right:0;z-index:40;
+  padding:26px 0;
+}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.nav img{width:148px;height:auto}
+.nav-cta{
+  font-family:var(--body);font-size:var(--t-small);font-weight:500;
+  color:var(--text-hi);text-decoration:none;padding:11px 22px;
+  border:1px solid rgba(255,255,255,.26);border-radius:var(--r-btn);
+  transition:border-color .25s var(--ease),background .25s var(--ease);
+  white-space:nowrap;
+}
+.nav-cta:hover{border-color:var(--gold);background:rgba(201,162,74,.10)}
+@media(max-width:640px){.nav-cta{display:none}.nav img{width:124px}}
+
+/* ============================================================
+   HERO
+   ============================================================ */
+.hero{position:relative;min-height:min(112svh,1120px);display:flex;align-items:flex-end;padding-bottom:0}
+.hero-media{
+  position:absolute;inset:0;overflow:hidden;display:grid;
+  grid-template-columns:1fr;grid-template-rows:clamp(300px,46vh,520px) 1fr;
+}
+.hero-shot{position:relative;margin:0;overflow:hidden}
+.hero-shot img{width:100%;height:100%;object-fit:cover}
+
+/* faixa da bandeira, no topo, quase sem veu */
+.hero-shot-main img{object-position:50% 50%;filter:saturate(1.06) contrast(1.03)}
+.hero-shot-main::after{
+  content:"";position:absolute;inset:0;z-index:2;
+  background:
+    linear-gradient(115deg,rgba(6,12,23,.66) 0%,rgba(6,12,23,.22) 30%,rgba(6,12,23,0) 54%),
+    linear-gradient(180deg,rgba(6,12,23,.52) 0%,rgba(6,12,23,.16) 38%,rgba(6,12,23,.06) 66%,rgba(6,12,23,.40) 100%);
+}
+
+
+/* fio tricolor separando a faixa da bandeira da paisagem */
+.hero-media::after{
+  content:"";position:absolute;left:0;right:0;z-index:3;
+  top:clamp(300px,46vh,520px);height:3px;
+  background:linear-gradient(90deg,var(--celeste) 0 34%,#FFFFFF 34% 66%,var(--celeste) 66% 100%);
+  opacity:.9;
+}
+@media(max-width:768px){
+  /* no celular a faixa é mais estreita, então centraliza o sol de maio */
+  .hero-shot-main img{object-position:40% 50%}
+}
+.hero-inner{position:relative;z-index:4;width:100%;padding-top:calc(clamp(300px,46vh,520px) + clamp(44px,6vh,80px))}
+.hero-grid{max-width:860px}
+.hero h1{
+  font-size:var(--t-hero);line-height:.98;letter-spacing:-.035em;font-weight:500;margin-bottom:28px;
+}
+.hero h1 em{font-style:normal;color:var(--gold-hi)}
+.hero .lead{max-width:56ch;color:#D4DDEA;margin-top:0}
+.hero-actions{display:flex;flex-wrap:wrap;align-items:center;gap:14px 26px;margin-top:40px}
+
+/* status strip */
+.status{
+  margin-top:56px;border-top:1px solid var(--amber-rule);
+  background:linear-gradient(180deg,var(--amber-bg),rgba(192,138,112,0));
+  padding:22px 0 26px;
+}
+.status-inner{display:flex;gap:16px;align-items:flex-start;max-width:900px}
+.status-dot{
+  flex:none;width:9px;height:9px;border-radius:50%;background:var(--amber);
+  margin-top:9px;box-shadow:0 0 0 4px rgba(192,138,112,.16);
+}
+.status b{color:var(--amber);font-weight:600;font-family:var(--body)}
+.status p{font-size:var(--t-small);color:var(--text-mid);line-height:1.58}
+
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  font-family:var(--body);font-size:1rem;font-weight:600;letter-spacing:.005em;
+  padding:17px 34px;border-radius:var(--r-btn);border:1px solid transparent;
+  text-decoration:none;cursor:pointer;min-height:48px;
+  transition:transform .2s var(--ease),background .25s var(--ease),border-color .25s var(--ease),color .25s var(--ease);
+}
+.btn-primary{background:var(--gold);color:#140F02;border-color:var(--gold)}
+.btn-primary:hover{background:var(--gold-hi);border-color:var(--gold-hi);transform:translateY(-1px)}
+.btn-ghost{background:transparent;color:var(--text-hi);border-color:rgba(255,255,255,.28)}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold-hi)}
+.link-sub{
+  font-size:var(--t-small);color:var(--text-mid);text-decoration:none;
+  border-bottom:1px solid var(--rule);padding-bottom:3px;transition:color .2s,border-color .2s;
+}
+.link-sub:hover{color:var(--gold-hi);border-color:var(--gold)}
+
+:focus-visible{outline:2px solid var(--gold-hi);outline-offset:3px;border-radius:var(--r-field)}
+
+/* ============================================================
+   PRICING
+   ============================================================ */
+.head-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.86fr);gap:clamp(28px,5vw,80px);align-items:end}
+@media(max-width:900px){.head-row{grid-template-columns:1fr;align-items:start}}
+
+.routes{display:grid;grid-template-columns:1fr 1fr;gap:clamp(16px,2vw,26px);margin-top:clamp(44px,6vw,72px)}
+@media(max-width:780px){.routes{grid-template-columns:1fr}}
+.route{
+  background:var(--ink-800);border:1px solid var(--rule-soft);border-radius:var(--r-card);
+  padding:clamp(28px,3.4vw,44px);position:relative;
+  transition:border-color .3s var(--ease),background .3s var(--ease);
+}
+.route:hover{border-color:var(--rule);background:var(--ink-750)}
+.route-label{
+  font-size:var(--t-micro);font-weight:600;letter-spacing:.15em;text-transform:uppercase;
+  color:var(--text-low);margin-bottom:22px;
+}
+.route-figure{
+  font-family:var(--display);font-size:var(--t-figure);font-weight:500;line-height:.92;
+  letter-spacing:-.035em;color:var(--text-hi);
+}
+.route-figure span{color:var(--text-low);font-size:.36em;letter-spacing:.04em;display:block;margin-bottom:10px;font-weight:500}
+.route-note{margin-top:20px;font-size:var(--t-small);color:var(--text-mid);border-top:1px solid var(--rule-soft);padding-top:18px}
+
+.price-grid{
+  display:grid;grid-template-columns:minmax(0,1.04fr) minmax(0,1fr);
+  gap:clamp(28px,4vw,64px);align-items:center;margin-top:clamp(44px,6vw,72px);
+}
+@media(max-width:860px){.price-grid{grid-template-columns:1fr;gap:40px}}
+.route-lead{padding:clamp(32px,4vw,56px)}
+.route-lead .route-figure{font-size:clamp(3rem,7.4vw,5.6rem)}
+.total{
+  display:flex;justify-content:space-between;align-items:baseline;gap:20px;
+  margin-top:26px;padding-top:22px;border-top:1px solid var(--rule);
+}
+.total .k{font-size:var(--t-small);color:var(--text-hi);font-weight:600}
+.total .v{font-family:var(--display);font-weight:600;color:var(--gold-hi);font-size:1.5rem;white-space:nowrap;letter-spacing:-.01em}
+.aside-note{
+  margin-top:clamp(36px,4vw,52px);max-width:76ch;font-size:var(--t-micro);
+  color:var(--text-low);line-height:1.66;padding-left:16px;border-left:1px solid var(--rule-soft);
+}
+
+.flag{width:26px;height:16.5px;border-radius:2px;flex:none;box-shadow:0 0 0 1px rgba(255,255,255,.16)}
+.eyebrow-flag::before{display:none}
+.tricolor{
+  height:9px;width:78px;border-radius:2px;margin-bottom:26px;
+  background:linear-gradient(180deg,var(--celeste) 0 33.33%,#FFFFFF 33.33% 66.66%,var(--celeste) 66.66% 100%);
+}
+
+/* faixa de paisagem, sangrando */
+/* placa fina de paisagem, só foto e legenda */
+.plate{position:relative;min-height:clamp(230px,27vw,360px);display:flex;align-items:flex-end;overflow:hidden}
+.plate img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.68) contrast(1.04) brightness(.82)}
+.plate::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(6,12,23,.74) 0%,rgba(6,12,23,.32) 42%,rgba(6,12,23,.95) 100%);
+}
+.plate .wrap{position:relative;z-index:2;width:100%;padding-bottom:24px}
+.plate .tricolor{height:6px;width:52px;margin-bottom:12px}
+.plate-cap{
+  font-size:var(--t-micro);letter-spacing:.15em;text-transform:uppercase;
+  color:rgba(243,246,250,.66);font-weight:500;
+}
+.country .plate-cap{margin-top:30px}
+
+.country{position:relative;min-height:clamp(430px,58vw,660px);display:flex;align-items:flex-end;overflow:hidden}
+.country img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.74) contrast(1.06)}
+.country::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,rgba(6,12,23,.80) 0%,rgba(6,12,23,.26) 34%,rgba(6,12,23,.94) 100%);
+}
+.country .wrap{position:relative;z-index:2;width:100%;padding-top:clamp(140px,18vw,240px);padding-bottom:clamp(48px,6vw,84px)}
+.country h2{max-width:15ch}
+.country .lead{max-width:56ch;color:#D7E0EC}
+
+.sub-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,64px);margin-top:clamp(44px,5vw,64px)}
+@media(max-width:780px){.sub-grid{grid-template-columns:1fr;gap:40px}}
+.sub-title{
+  font-size:var(--t-micro);font-weight:600;letter-spacing:.15em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:20px;
+}
+.rows{list-style:none;margin:0;padding:0}
+.rows li{
+  display:flex;justify-content:space-between;align-items:baseline;gap:20px;
+  padding:15px 0;border-bottom:1px solid var(--rule-soft);font-size:var(--t-small);
+}
+.rows li:first-child{border-top:1px solid var(--rule-soft)}
+.rows .k{color:var(--text-mid);max-width:30ch}
+.rows .v{font-family:var(--display);font-weight:600;color:var(--text-hi);white-space:nowrap;font-size:1.0625rem}
+.rows .v.big{color:var(--gold-hi);font-size:1.3rem}
+.footnote{margin-top:22px;font-size:var(--t-micro);color:var(--text-low);line-height:1.55}
+
+.cta-row{margin-top:clamp(44px,6vw,72px);display:flex;flex-wrap:wrap;gap:18px;align-items:center}
+
+/* ============================================================
+   TIMING / CARIBBEAN
+   ============================================================ */
+.split{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(36px,6vw,96px);align-items:start}
+@media(max-width:940px){.split{grid-template-columns:1fr;gap:44px}}
+.prose p+p{margin-top:22px}
+.prose{color:var(--text-mid);max-width:60ch}
+.prose strong{color:var(--text-hi);font-weight:600}
+
+.marks{display:grid;gap:2px;background:var(--rule-soft);border:1px solid var(--rule-soft);
+  border-radius:var(--r-card);overflow:hidden}
+.mark{background:var(--ink-850);padding:clamp(22px,2.6vw,32px)}
+.mark .m-fig{
+  font-family:var(--display);font-size:clamp(1.7rem,3vw,2.5rem);font-weight:600;
+  letter-spacing:-.02em;color:var(--gold-hi);line-height:1;
+}
+.mark .m-txt{margin-top:12px;font-size:var(--t-small);color:var(--text-mid)}
+
+/* ============================================================
+   PASSPORT FIGURES
+   ============================================================ */
+.figs{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:var(--rule-soft);
+  border:1px solid var(--rule-soft);border-radius:var(--r-card);overflow:hidden;margin-top:clamp(44px,6vw,72px)}
+@media(max-width:900px){.figs{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.figs{grid-template-columns:1fr}}
+.fig{background:var(--ink-900);padding:clamp(26px,3vw,40px) clamp(22px,2.4vw,32px);
+  display:flex;flex-direction:column;min-height:200px}
+.fig .f-big{
+  font-family:var(--display);font-size:clamp(2rem,3.4vw,2.9rem);font-weight:500;line-height:1;
+  letter-spacing:-.03em;color:var(--text-hi);
+}
+.fig .f-big.sm{font-size:clamp(1.25rem,2vw,1.6rem);line-height:1.2}
+.fig .f-txt{margin-top:auto;padding-top:16px;font-size:var(--t-small);color:var(--text-mid);line-height:1.5}
+
+/* ============================================================
+   TERMS (what it does not ask)
+   ============================================================ */
+.terms{counter-reset:t;margin-top:clamp(44px,6vw,72px);display:grid;gap:0}
+.term{
+  counter-increment:t;display:grid;grid-template-columns:72px minmax(0,1fr);
+  gap:clamp(16px,3vw,44px);padding:clamp(26px,3vw,38px) 0;border-top:1px solid var(--rule-soft);
+}
+.term:last-child{border-bottom:1px solid var(--rule-soft)}
+.term::before{
+  content:counter(t,decimal-leading-zero);font-family:var(--display);font-size:1rem;font-weight:600;
+  color:#A6822F;letter-spacing:.08em;padding-top:5px;
+}
+.term h3{font-size:var(--t-h3);font-weight:600;letter-spacing:-.01em;margin-bottom:10px;}
+.term p{color:var(--text-mid);font-size:var(--t-small);max-width:66ch}
+@media(max-width:600px){.term{grid-template-columns:44px minmax(0,1fr)}}
+
+.caveat{
+  margin-top:clamp(36px,4vw,52px);border-left:2px solid var(--amber);
+  background:var(--amber-bg);padding:clamp(24px,3vw,34px);border-radius:0 var(--r-card) var(--r-card) 0;
+}
+.caveat h3{font-size:1.0625rem;font-weight:600;color:var(--amber);margin-bottom:12px;font-family:var(--body)}
+.caveat p{color:var(--text-mid);font-size:var(--t-small);max-width:70ch}
+
+/* ============================================================
+   TIMELINE
+   ============================================================ */
+.tl-layout{
+  display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.62fr);
+  gap:clamp(36px,6vw,90px);align-items:start;margin-top:clamp(44px,6vw,72px);
+}
+@media(max-width:940px){.tl-layout{grid-template-columns:1fr;gap:44px}}
+.blockers{
+  position:sticky;top:44px;border:1px solid var(--rule-soft);border-radius:var(--r-card);
+  background:var(--ink-850);padding:clamp(26px,3vw,36px);
+}
+@media(max-width:940px){.blockers{position:static}}
+.blockers ol{list-style:none;margin:0;padding:0}
+.blockers li{
+  padding:16px 0;border-top:1px solid var(--rule-soft);
+  font-size:var(--t-small);color:var(--text-mid);
+}
+.blockers li b{display:block;color:var(--text-hi);font-weight:600;margin-bottom:4px}
+.blockers-note{
+  margin-top:24px;padding-top:22px;border-top:1px solid var(--rule);
+  font-size:var(--t-small);color:var(--text-hi);line-height:1.6;
+}
+
+.tl{position:relative;padding-left:clamp(26px,3vw,40px)}
+.tl::before{content:"";position:absolute;left:0;top:10px;bottom:10px;width:1px;background:var(--rule)}
+.tl-item{position:relative;padding:0 0 clamp(28px,3vw,40px) 0}
+.tl-item:last-child{padding-bottom:0}
+.tl-item::before{
+  content:"";position:absolute;left:calc(-1 * clamp(26px,3vw,40px));top:9px;
+  width:7px;height:7px;border-radius:50%;background:var(--rule);transform:translateX(-3px);
+}
+.tl-item.now::before{background:var(--gold);box-shadow:0 0 0 4px rgba(201,162,74,.18)}
+.tl-date{
+  font-family:var(--display);font-size:var(--t-micro);font-weight:600;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--gold);margin-bottom:8px;
+}
+.tl-item.now .tl-date{color:var(--gold-hi)}
+.tl-body{color:var(--text-mid);font-size:var(--t-small);max-width:62ch}
+.tl-body strong{color:var(--text-hi);font-weight:600}
+
+.closing{
+  margin-top:clamp(40px,5vw,60px);padding-top:clamp(32px,4vw,44px);border-top:1px solid var(--rule);
+  font-size:var(--t-lead);color:var(--text-hi);max-width:64ch;line-height:1.55;
+}
+
+/* ============================================================
+   RISKS
+   ============================================================ */
+.risks{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:var(--rule-soft);
+  border:1px solid var(--rule-soft);border-radius:var(--r-card) var(--r-card) 0 0;overflow:hidden;margin-top:clamp(44px,6vw,72px)}
+@media(max-width:880px){.risks{grid-template-columns:1fr}}
+.risk{background:var(--ink-850);padding:clamp(28px,3.2vw,44px)}
+.risk h3{font-size:var(--t-h3);font-weight:600;margin-bottom:16px;letter-spacing:-.01em;}
+.risk p{color:var(--text-mid);font-size:var(--t-small)}
+.reading{
+  margin-top:2px;background:var(--ink-800);padding:clamp(28px,3.2vw,44px);
+  border:1px solid var(--rule-soft);border-top:none;border-radius:0 0 var(--r-card) var(--r-card);
+}
+.reading h3{font-size:1.0625rem;font-family:var(--body);font-weight:600;color:var(--gold);margin-bottom:14px}
+.reading p{color:var(--text-mid);font-size:var(--t-small);max-width:78ch}
+
+/* ============================================================
+   BOND
+   ============================================================ */
+.split.stretch{align-items:stretch}
+.bond-media{position:relative;overflow:hidden;min-height:clamp(340px,46vw,560px);border:1px solid var(--rule-soft);border-radius:var(--r-card)}
+.bond-media img{width:100%;height:100%;object-fit:cover;object-position:50% 34%;filter:saturate(.82) contrast(1.04);position:absolute;inset:0}
+.bond-media::after{
+  content:"";position:absolute;inset:0;
+  background:linear-gradient(195deg,rgba(6,12,23,.18) 0%,rgba(6,12,23,.34) 52%,rgba(6,12,23,.88) 100%);
+}
+.steps{list-style:none;margin:clamp(32px,4vw,44px) 0 0;padding:0;counter-reset:s}
+.steps li{
+  counter-increment:s;padding:20px 0 20px 52px;border-top:1px solid var(--rule-soft);position:relative;
+  font-size:var(--t-small);color:var(--text-mid);
+}
+.steps li:last-child{border-bottom:1px solid var(--rule-soft)}
+.steps li::before{
+  content:counter(s);position:absolute;left:0;top:21px;width:28px;height:28px;border-radius:50%;
+  border:1px solid var(--gold-dim);color:var(--gold);display:grid;place-items:center;
+  font-family:var(--display);font-size:.8125rem;font-weight:600;
+}
+.steps strong{color:var(--text-hi);font-weight:600;display:block;margin-bottom:3px}
+
+/* ============================================================
+   FORM
+   ============================================================ */
+.form-sect{background:var(--ink-850);border-top:1px solid var(--rule-soft)}
+.form-grid{display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);gap:clamp(36px,6vw,88px);align-items:start}
+@media(max-width:960px){.form-grid{grid-template-columns:1fr;gap:40px}}
+
+fieldset{border:none;margin:0;padding:0}
+legend{
+  font-size:var(--t-micro);font-weight:600;letter-spacing:.15em;text-transform:uppercase;
+  color:var(--gold);padding:0 0 18px;
+}
+.fs+.fs{margin-top:clamp(32px,4vw,44px)}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media(max-width:620px){.fields{grid-template-columns:1fr}}
+.field{display:flex;flex-direction:column}
+.field.full{grid-column:1/-1}
+label{font-size:var(--t-small);font-weight:500;color:var(--text-hi);margin-bottom:9px}
+label .opt{color:var(--text-low);font-weight:400}
+input,select,textarea{
+  font-family:var(--body);font-size:1rem;color:var(--text-hi);
+  background:var(--ink-900);border:1px solid var(--rule);border-radius:var(--r-field);
+  padding:14px 15px;min-height:50px;width:100%;
+  transition:border-color .22s var(--ease),background .22s var(--ease);
+}
+textarea{min-height:104px;resize:vertical;line-height:1.55}
+select{
+  appearance:none;cursor:pointer;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%237D90AC' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right 15px center;padding-right:40px;
+}
+input:hover,select:hover,textarea:hover{border-color:#24395A}
+input:focus,select:focus,textarea:focus{border-color:var(--gold);background:#070F1C;outline:none}
+input::placeholder,textarea::placeholder{color:#5C6E88}
+.err{display:none;margin-top:7px;font-size:var(--t-micro);color:var(--danger);align-items:center;gap:6px}
+.err::before{content:"!";flex:none;width:14px;height:14px;border-radius:50%;border:1px solid var(--danger);font-size:10px;display:grid;place-items:center;font-weight:700}
+.field.invalid .err{display:flex}
+.field.invalid input,.field.invalid select,.field.invalid textarea{border-color:var(--danger)}
+
+.submit-row{margin-top:clamp(30px,4vw,40px)}
+.btn[disabled]{opacity:.62;cursor:not-allowed;transform:none}
+.privacy{margin-top:18px;font-size:var(--t-micro);color:var(--text-low);max-width:56ch;line-height:1.55}
+
+.sent{display:none;border:1px solid var(--amber-rule);border-radius:var(--r-card);background:var(--amber-bg);padding:clamp(30px,4vw,44px)}
+.next{list-style:none;margin:clamp(32px,4vw,44px) 0 0;padding:0;counter-reset:n}
+.next li{
+  counter-increment:n;position:relative;padding:14px 0 14px 40px;
+  font-size:var(--t-small);color:var(--text-mid);border-top:1px solid var(--rule-soft);
+}
+.next li:last-child{border-bottom:1px solid var(--rule-soft)}
+.next li::before{
+  content:counter(n);position:absolute;left:0;top:15px;
+  font-family:var(--display);font-size:.8125rem;font-weight:600;color:#A6822F;letter-spacing:.06em;
+}
+.next b{color:var(--text-hi);font-weight:600}
+
+.sent h3{font-family:var(--display);font-size:var(--t-h3);font-weight:600;color:var(--gold-hi);margin-bottom:14px}
+.sent p{color:var(--text-mid);font-size:var(--t-small);max-width:52ch}
+.is-sent .sent{display:block}
+.is-sent form{display:none}
+
+/* ============================================================
+   FAQ
+   ============================================================ */
+.faq{margin-top:clamp(40px,5vw,64px);border-top:1px solid var(--rule-soft)}
+details{border-bottom:1px solid var(--rule-soft)}
+summary{
+  cursor:pointer;list-style:none;padding:24px 48px 24px 0;position:relative;
+  font-family:var(--display);font-size:clamp(1.02rem,1.5vw,1.2rem);font-weight:600;
+  letter-spacing:-.005em;color:var(--text-hi);transition:color .2s var(--ease);
+}
+summary::-webkit-details-marker{display:none}
+summary:hover{color:var(--gold-hi)}
+summary::after{
+  content:"";position:absolute;right:4px;top:50%;width:11px;height:11px;
+  border-right:1.5px solid var(--gold);border-bottom:1.5px solid var(--gold);
+  transform:translateY(-70%) rotate(45deg);transition:transform .3s var(--ease);
+}
+details[open] summary::after{transform:translateY(-25%) rotate(225deg)}
+details .a{padding:0 clamp(40px,10vw,120px) 28px 0;color:var(--text-mid);font-size:var(--t-small);max-width:76ch}
+
+/* ============================================================
+   STICKY BAR
+   ============================================================ */
+.sticky{
+  position:fixed;left:0;right:0;bottom:0;z-index:50;
+  background:rgba(8,17,31,.93);backdrop-filter:blur(14px);
+  border-top:1px solid var(--rule);
+  transform:translateY(102%);transition:transform .38s var(--ease);
+  padding:14px 0;
+}
+.sticky.show{transform:translateY(0)}
+.sticky .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.sticky p{font-size:var(--t-small);color:var(--text-mid)}
+.sticky p b{color:var(--text-hi);font-weight:600}
+.sticky .btn{padding:13px 26px;min-height:46px;font-size:.9375rem}
+@media(max-width:700px){
+  .sticky p{display:none}
+  .sticky .btn{width:100%}
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+.foot{border-top:1px solid var(--rule-soft);padding:clamp(48px,6vw,72px) 0 calc(clamp(48px,6vw,72px) + 72px)}
+.foot-top{display:flex;justify-content:space-between;align-items:flex-start;gap:32px;flex-wrap:wrap}
+.foot img{width:160px;opacity:.9}
+.foot .tag{font-size:var(--t-small);color:var(--text-low);font-style:italic;display:flex;align-items:center;gap:10px}
+.foot .legal{margin-top:clamp(32px,4vw,44px);padding-top:28px;border-top:1px solid var(--rule-soft);
+  font-size:var(--t-micro);color:var(--text-low);max-width:92ch;line-height:1.62}
+.foot .legal p+p{margin-top:12px}
+
+/* ============================================================
+   REVEAL (JS adds .js to html, so no-JS shows everything)
+   ============================================================ */
+.js .rv{opacity:0;transform:translateY(18px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+.js .rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  *{animation-duration:.01ms !important;transition-duration:.01ms !important}
+  .js .rv{opacity:1;transform:none}
+  .sticky{transition:none}
+}
+</style>
+</head>
+<body>
+<script>document.documentElement.className+=' js';</script>
+
+<header class="nav">
+  <div class="wrap">
+    <img src="assets/logo-bond-white.png" alt="Bond and Partners" width="148" height="51">
+    <a class="nav-cta" href="#register">Request priority access</a>
+  </div>
+</header>
+
+<main>
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero-media">
+    <figure class="hero-shot hero-shot-main">
+      <img src="https://images.unsplash.com/photo-1617618754637-71af0f2e7974?w=2400&amp;h=1040&amp;q=80&amp;auto=format&amp;fit=crop&amp;crop=focalpoint&amp;fp-x=0.38&amp;fp-y=0.38&amp;fp-z=1"
+           alt="" fetchpriority="high" decoding="async">
+    </figure>
+  </div>
+  <div class="hero-inner">
+    <div class="wrap">
+      <div class="hero-grid">
+        <p class="eyebrow eyebrow-flag"><svg class="flag" viewBox="0 0 30 19" aria-hidden="true" focusable="false"><rect width="30" height="19" fill="#FFFFFF"/><rect width="30" height="6.34" fill="#75AADB"/><rect y="12.66" width="30" height="6.34" fill="#75AADB"/><g fill="#F6B40E"><circle cx="15" cy="9.5" r="1.75"/><path d="M15 5.9l.55 1.5h-1.1zM15 13.1l.55-1.5h-1.1zM11.4 9.5l1.5.55v-1.1zM18.6 9.5l-1.5.55v-1.1zM12.45 6.95l1.4.72-.78.78zM17.55 12.05l-1.4-.72.78-.78zM12.45 12.05l.62-1.5.78.78zM17.55 6.95l-.62 1.5-.78-.78z"/></g></svg>Argentina &middot; Citizenship by Investment</p>
+        <h1>Argentina is opening its citizenship to&nbsp;investors.</h1>
+        <p class="lead">South America&rsquo;s first programme, expected to open this quarter, from <b>USD&nbsp;350,000</b>. Bond and Partners holds your place in the first intake.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#register">Request priority access</a>
+          <a class="link-sub" href="#figures">See the published figures</a>
+        </div>
+      </div>
+    </div>
+    <div class="status">
+      <div class="wrap">
+        <div class="status-inner">
+          <span class="status-dot" aria-hidden="true"></span>
+          <p><b>Programme status, October 2026.</b> Pricing is announced and Argentina is targeting the <b>fourth quarter of 2026</b>, the quarter now under way. Applications are not open yet and no portal exists, which is exactly why a place in the queue matters today.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FIGURES ============ -->
+<section class="section" id="figures">
+  <div class="wrap">
+    <div class="head-row rv">
+      <div>
+        <p class="eyebrow">What it costs</p>
+        <h2>One contribution.<br>One published price.</h2>
+      </div>
+      <p class="lead">On 2 October 2026 Argentina put a number on its programme for the first time. This is that number, unchanged.</p>
+    </div>
+
+    <div class="price-grid rv">
+      <div class="route route-lead">
+        <p class="route-label">Contribution to the Argentine Treasury</p>
+        <p class="route-figure"><span>USD</span>350,000</p>
+        <p class="route-note">Non-refundable. Principal applicant. This is the route we work with.</p>
+      </div>
+      <div>
+        <p class="sub-title">Adding your family</p>
+        <ul class="rows">
+          <li><span class="k">Spouse</span><span class="v">USD 100,000</span></li>
+          <li><span class="k">Child aged 18 to 25, unmarried and without children</span><span class="v">USD 100,000</span></li>
+          <li><span class="k">Child under 18</span><span class="v">USD 25,000</span></li>
+        </ul>
+        <div class="total">
+          <span class="k">A family of four</span><span class="v big">USD 500,000</span>
+        </div>
+        <p class="footnote">Figures announced 2 October 2026. Government fees and processing costs have not been published, so no firm can yet quote a true all-in number.</p>
+      </div>
+    </div>
+
+    <p class="aside-note rv">There is also a bond route: USD 800,000 in a seven-year government security paying no interest, covering the principal applicant only, with dependants still added by Treasury contribution. It ties up more than twice the capital for the same passport, so it is rarely the right answer. Ask us if you want it looked at.</p>
+
+    <div class="cta-row rv">
+      <a class="btn btn-primary" href="#register">Secure my place in the first intake</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TIMING ============ -->
+<section class="section band">
+  <div class="wrap">
+    <div class="split">
+      <div class="rv">
+        <p class="eyebrow">The timing</p>
+        <h2>Europe has told the Caribbean to close.</h2>
+        <div class="prose" style="margin-top:28px">
+          <p>On 25 June 2026 the European Commission wrote to five Caribbean states asking them to phase out their citizenship by investment programmes by 1 June 2028. The letter named <strong>Antigua and Barbuda, Dominica, Grenada, Saint Kitts and Nevis, and Saint Lucia</strong>. If they do not comply, their citizens can lose visa-free entry to the Schengen Area.</p>
+          <p>The legal basis is the revised EU Visa Suspension Mechanism, in force since 31 December 2025, under which simply running a citizenship by investment programme is now grounds on its own to suspend visa-free travel.</p>
+          <p>Those five programmes are what Argentina is about to compete with. Entry there starts near USD 200,000. Argentina starts at USD 350,000, with a passport that was strong before the programme existed and will be strong without it.</p>
+        </div>
+      </div>
+      <div class="marks rv">
+        <div class="mark"><p class="m-fig">25 Jun 2026</p><p class="m-txt">European Commission letter sent to the five states</p></div>
+        <div class="mark"><p class="m-fig">1 Jun 2028</p><p class="m-txt">Deadline given to phase the programmes out</p></div>
+        <div class="mark"><p class="m-fig">5</p><p class="m-txt">Competing programmes directly affected</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PLATE: GLACIER ============ -->
+<section class="plate">
+  <img src="https://images.unsplash.com/photo-1590246646417-b0199da13a3d?w=2200&h=900&q=74&auto=format&fit=crop"
+       alt="" loading="lazy" decoding="async">
+  <div class="wrap">
+    <div class="tricolor" aria-hidden="true"></div>
+    <p class="plate-cap">Perito Moreno Glacier &middot; Santa Cruz Province</p>
+  </div>
+</section>
+
+<!-- ============ PASSPORT ============ -->
+<section class="section">
+  <div class="wrap">
+    <div class="head-row rv">
+      <div>
+        <p class="eyebrow">The asset</p>
+        <h2>The Argentine passport is already one of the strongest in the Americas.</h2>
+      </div>
+    </div>
+    <div class="figs rv">
+      <div class="fig"><p class="f-big">~170</p><p class="f-txt">Destinations reachable visa-free or with visa on arrival</p></div>
+      <div class="fig"><p class="f-big f-sm sm">Schengen, the UK and Japan</p><p class="f-txt">Among them, without a prior visa</p></div>
+      <div class="fig"><p class="f-big f-sm sm">MERCOSUR</p><p class="f-txt">Rights to live, work and settle across member states</p></div>
+      <div class="fig"><p class="f-big f-sm sm">Every generation</p><p class="f-txt">The citizenship passes to your descendants</p></div>
+    </div>
+    <p class="footnote rv">Destination count per the Henley Passport Index, 2026. Visa policies are set by each destination and change.</p>
+  </div>
+</section>
+
+<!-- ============ COUNTRY BAND ============ -->
+<section class="country">
+  <img src="https://images.unsplash.com/photo-1585491665805-48272c97a0f6?w=2400&h=1250&q=76&auto=format&fit=crop"
+       alt="" loading="lazy" decoding="async">
+  <div class="wrap">
+    <div class="tricolor rv" aria-hidden="true"></div>
+    <h2 class="rv">Not a passport shop.<br>A country.</h2>
+    <p class="lead rv">Forty-seven million people, the third largest economy in Latin America, and a passport earned over decades rather than invented for this programme. From Buenos Aires to Patagonia, Argentina was here long before the investors were invited.</p>
+    <p class="plate-cap rv">Monte Fitz Roy &middot; Santa Cruz Province</p>
+  </div>
+</section>
+
+<!-- ============ TERMS ============ -->
+<section class="section band">
+  <div class="wrap">
+    <div class="head-row rv">
+      <div>
+        <p class="eyebrow">The terms</p>
+        <h2>No move.<br>No renunciation.</h2>
+      </div>
+    </div>
+    <div class="terms">
+      <div class="term rv"><div><h3>No residence in Argentina</h3><p>The framework qualifies investors regardless of where they live.</p></div></div>
+      <div class="term rv"><div><h3>No physical presence</h3><p>There is no minimum stay required to naturalise through this route.</p></div></div>
+      <div class="term rv"><div><h3>No renunciation</h3><p>Argentina permits dual citizenship. You keep what you already hold.</p></div></div>
+      <div class="term rv"><div><h3>No automatic Argentine tax residency</h3><p>A February 2026 reform moved citizens naturalised through investment out of automatic tax residency. Residency now follows physical presence, not the passport.</p></div></div>
+    </div>
+    <div class="caveat rv">
+      <h3>On tax, read this carefully</h3>
+      <p>The reform still awaits authorisation from the Ministry of Economy and has no activation date. Two readings of the text compete, one of which treats twelve months of physical presence as the trigger for full worldwide taxation. Treat your own position with a tax adviser. We will not tell you this programme is a tax plan.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATUS / TIMELINE ============ -->
+<section class="section">
+  <div class="wrap">
+    <div class="head-row rv">
+      <div>
+        <p class="eyebrow">The honest version</p>
+        <h2>It is announced.<br>It is not open.</h2>
+      </div>
+      <p class="lead">Most firms selling this will not show you the next ten lines. You are about to move between USD 350,000 and USD 500,000, so you should see them.</p>
+    </div>
+
+    <div class="tl-layout">
+    <div class="tl">
+      <div class="tl-item rv"><p class="tl-date">May 2025</p><p class="tl-body">DNU 366/2025 is issued. It is the instrument allowing naturalisation without prior residence, and the legal foundation of the entire route.</p></div>
+      <div class="tl-item rv"><p class="tl-date">31 July 2025</p><p class="tl-body">Decree 524/2025 formally creates the programme, the first of its kind in South America.</p></div>
+      <div class="tl-item rv"><p class="tl-date">April 2026</p><p class="tl-body">The tender for the programme operator is cancelled. Weeks later the government appoints an executive director to the Agency for Citizenship by Investment Programmes, APCI.</p></div>
+      <div class="tl-item rv"><p class="tl-date">18 June 2026</p><p class="tl-body">A federal appeals chamber in Buenos Aires rules <strong>DNU 366/2025 unconstitutional</strong>.</p></div>
+      <div class="tl-item rv"><p class="tl-date">30 June 2026</p><p class="tl-body">The National Electoral Chamber declares the same decree null.</p></div>
+      <div class="tl-item rv"><p class="tl-date">July 2026</p><p class="tl-body">The government appeals to the Supreme Court. <strong>The decision is still pending.</strong></p></div>
+      <div class="tl-item rv"><p class="tl-date">2 October 2026</p><p class="tl-body">Pricing is announced, with a government target of the fourth quarter of 2026 for first applications.</p></div>
+      <div class="tl-item now rv"><p class="tl-date">Today</p><p class="tl-body"><strong>No application portal exists.</strong> Agent accreditation rules are unpublished.</p></div>
+    </div>
+
+      <aside class="blockers rv">
+        <p class="sub-title">Three things have to land</p>
+        <ol>
+          <li><b>The implementing regulation</b>Not yet published by the Ministry of Economy.</li>
+          <li><b>Agent accreditation rules</b>Unpublished, so no firm is authorised to file on your behalf.</li>
+          <li><b>The Supreme Court</b>The appeal on DNU 366/2025 is still pending.</li>
+        </ol>
+        <p class="blockers-note">That is exactly why a place in the queue is worth holding now, and why nobody can honestly sell you an application today.</p>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PLATE: PATAGONIA ============ -->
+<section class="plate">
+  <img src="https://images.unsplash.com/photo-1600211906168-fbc6df476b1c?w=2200&amp;h=900&amp;q=74&amp;auto=format&amp;fit=crop"
+       alt="" loading="lazy" decoding="async">
+  <div class="wrap">
+    <div class="tricolor" aria-hidden="true"></div>
+    <p class="plate-cap">Cerro Torre &middot; Patagonia</p>
+  </div>
+</section>
+
+<!-- ============ RISKS ============ -->
+<section class="section band">
+  <div class="wrap">
+    <div class="head-row rv">
+      <div>
+        <p class="eyebrow">Before you commit</p>
+        <h2>Two risks, stated plainly.</h2>
+      </div>
+    </div>
+    <div class="risks rv">
+      <div class="risk">
+        <h3>The programme may not open on schedule</h3>
+        <p>The fourth quarter target is a government objective, not a commitment, and it depends on a court that has not ruled. Registering a priority place costs you nothing and commits you to nothing. Do not move funds against a date that does not exist yet.</p>
+      </div>
+      <div class="risk">
+        <h3>Europe&rsquo;s new rule points at every programme</h3>
+        <p>The same mechanism being used against the five Caribbean states applies to any visa-exempt country running such a programme. Vanuatu has already lost visa-free access on these grounds. Argentina could come under the same scrutiny once it opens.</p>
+      </div>
+    </div>
+    <div class="reading rv">
+      <h3>Our reading, and it is a reading</h3>
+      <p>Argentina is not a microstate selling passports as an export. It is a country of 47 million with a passport earned over decades, a published entry price well above the Caribbean floor, and a multi-agency vetting process. That is the profile the Commission says it wants. But no advisory firm can promise you what Brussels will decide, and any firm that does is selling you something it does not have.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BOND ============ -->
+<section class="section">
+  <div class="wrap">
+    <div class="split stretch">
+      <div class="rv">
+        <p class="eyebrow">Who holds your place</p>
+        <h2>Your partner in the pursuit of freedom.</h2>
+        <div class="prose" style="margin-top:28px">
+          <p>Bond and Partners advises private clients on citizenship and residency by investment, offshore structures, international banking and asset diversification. Our work spans company formation in more than <strong>25 jurisdictions</strong> and banking relationships with more than <strong>15 international institutions</strong>.</p>
+        </div>
+        <ol class="steps">
+          <li><strong>An eligibility review before the doors open</strong>so your file is built while others are still reading the news.</li>
+          <li><strong>Direct notice the day the regulation is published</strong>before it reaches the general market.</li>
+          <li><strong>A prepared application</strong>with source of funds documented to the standard the announced vetting process requires.</li>
+        </ol>
+      </div>
+      <div class="bond-media rv">
+        <img src="https://images.unsplash.com/photo-1610135206707-0f03e4800631?w=1000&h=1320&q=74&auto=format&fit=crop" alt="" loading="lazy" decoding="async">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COUNTRY BAND 2 ============ -->
+<section class="country">
+  <img src="https://images.unsplash.com/photo-1614949260630-1d8a27791215?w=2400&h=1250&q=76&auto=format&fit=crop"
+       alt="" loading="lazy" decoding="async">
+  <div class="wrap">
+    <div class="tricolor rv" aria-hidden="true"></div>
+    <h2 class="rv">The first intake is being formed now.</h2>
+    <p class="lead rv">Argentina is targeting this quarter. The files that are ready on the day the regulation lands are the files built before it lands.</p>
+    <p class="plate-cap rv">Iguaz&uacute; Falls &middot; Misiones Province</p>
+  </div>
+</section>
+
+<!-- ============ FORM ============ -->
+<section class="section form-sect" id="register">
+  <div class="wrap">
+    <div class="form-grid">
+      <div class="rv">
+        <div class="tricolor" aria-hidden="true"></div>
+        <p class="eyebrow">Priority register</p>
+        <h2>Register your priority place.</h2>
+        <p class="lead">No cost. No commitment. We review your eligibility and contact you within one business day.</p>
+        <ol class="next">
+          <li><b>You register.</b> Seven questions, nothing binding.</li>
+          <li><b>We review your eligibility</b> against the announced vetting criteria and come back within one business day.</li>
+          <li><b>We build your file</b> while the regulation is still being drafted.</li>
+          <li><b>You file on day one,</b> ahead of a market that will only start reading then.</li>
+        </ol>
+      </div>
+
+      <div class="rv" id="formHost">
+        <form id="priorityForm" novalidate>
+          <fieldset class="fs">
+            <legend>About you</legend>
+            <div class="fields">
+              <div class="field full">
+                <label for="name">Full name</label>
+                <input id="name" name="name" type="text" autocomplete="name" required>
+                <span class="err">Enter the name on your passport</span>
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" autocomplete="email" required>
+                <span class="err">Enter the email where you want to be notified</span>
+              </div>
+              <div class="field">
+                <label for="phone">Phone <span class="opt">(optional)</span></label>
+                <input id="phone" name="phone" type="tel" autocomplete="tel">
+              </div>
+              <div class="field full">
+                <label for="citizenship">Current citizenship</label>
+                <input id="citizenship" name="citizenship" type="text" autocomplete="country-name" required>
+                <span class="err">Tell us which passport you hold today</span>
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset class="fs">
+            <legend>About your plan</legend>
+            <div class="fields">
+              <div class="field">
+                <label for="who">Who is applying</label>
+                <select id="who" name="who" required>
+                  <option value="">Select</option>
+                  <option>Just me</option>
+                  <option>Me and my spouse</option>
+                  <option>Me and my family</option>
+                </select>
+                <span class="err">Choose one</span>
+              </div>
+              <div class="field">
+                <label for="route">Preferred route</label>
+                <select id="route" name="route" required>
+                  <option value="">Select</option>
+                  <option>Treasury contribution, USD 350,000</option>
+                  <option>Government bond, USD 800,000</option>
+                  <option>I want guidance on which</option>
+                </select>
+                <span class="err">Choose one</span>
+              </div>
+              <div class="field full">
+                <label for="timing">When you want to proceed</label>
+                <select id="timing" name="timing" required>
+                  <option value="">Select</option>
+                  <option>As soon as the programme opens</option>
+                  <option>Within the next six months</option>
+                  <option>Still evaluating</option>
+                </select>
+                <span class="err">Choose one</span>
+              </div>
+              <div class="field full">
+                <label for="notes">Anything we should know <span class="opt">(optional)</span></label>
+                <textarea id="notes" name="notes" rows="3"></textarea>
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="submit-row">
+            <button class="btn btn-primary" type="submit" id="submitBtn">Register my priority place</button>
+            <p class="privacy">Your details go to Bond and Partners only. We do not share them with third parties. Registering places no obligation on you and carries no fee.</p>
+          </div>
+        </form>
+
+        <div class="sent" id="sentMsg" role="status" aria-live="polite">
+          <h3>Your place is registered.</h3>
+          <p>A Bond adviser will contact you within one business day to review your eligibility. The moment Argentina publishes its implementing regulation, you will hear from us before the general market does.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section">
+  <div class="wrap">
+    <div class="head-row rv">
+      <div>
+        <p class="eyebrow">Questions</p>
+        <h2>What people ask us.</h2>
+      </div>
+    </div>
+    <div class="faq rv">
+      <details open>
+        <summary>Can I apply today?</summary>
+        <div class="a">No. Pricing has been announced and the government is targeting the fourth quarter of 2026, but applications are not open, no portal exists, and the implementing regulation has not been published. Anyone offering to file an application for you today cannot do so.</div>
+      </details>
+      <details>
+        <summary>What is the minimum, all in?</summary>
+        <div class="a">USD 350,000 as a non-refundable contribution to the Argentine Treasury for a single applicant. A family of four costs USD 500,000. A bond route at USD 800,000 also exists, but it ties up more than twice the capital for the same passport and is rarely the right answer. Government fees have not been published, so no one can yet quote you a true all-in figure.</div>
+      </details>
+      <details>
+        <summary>Do I have to live in Argentina?</summary>
+        <div class="a">No. The framework qualifies investors regardless of residence and sets no minimum stay.</div>
+      </details>
+      <details>
+        <summary>Do I have to give up my current citizenship?</summary>
+        <div class="a">No. Argentina permits dual citizenship.</div>
+      </details>
+      <details open>
+        <summary>Will I become an Argentine taxpayer?</summary>
+        <div class="a">Not through citizenship alone. A February 2026 reform moved investment-naturalised citizens out of automatic tax residency, tying it to physical presence instead. The reform still awaits ministerial authorisation and its wording is read two ways. Take advice on your own position.</div>
+      </details>
+      <details>
+        <summary>How long will approval take?</summary>
+        <div class="a">The National Directorate of Migration is to decide within 30 business days of receiving the vetting reports. That is one stage, not the end-to-end timeline, which has not been published.</div>
+      </details>
+      <details>
+        <summary>Can my children be included?</summary>
+        <div class="a">Yes. Children under 18 are added at USD 25,000, and unmarried children aged 18 to 25 without children of their own at USD 100,000. A spouse is USD 100,000.</div>
+      </details>
+      <details>
+        <summary>What happens to my place if the programme never opens?</summary>
+        <div class="a">Nothing is owed and nothing is paid. A priority registration is a position in our queue and a review of your eligibility, not a transaction. If Argentina does not proceed, we will tell you, and we will tell you what else fits.</div>
+      </details>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <img src="assets/logo-bond-white.png" alt="Bond and Partners" width="160" height="55">
+      <p class="tag"><svg class="flag" viewBox="0 0 30 19" aria-hidden="true" focusable="false"><rect width="30" height="19" fill="#FFFFFF"/><rect width="30" height="6.34" fill="#75AADB"/><rect y="12.66" width="30" height="6.34" fill="#75AADB"/><g fill="#F6B40E"><circle cx="15" cy="9.5" r="1.75"/><path d="M15 5.9l.55 1.5h-1.1zM15 13.1l.55-1.5h-1.1zM11.4 9.5l1.5.55v-1.1zM18.6 9.5l-1.5.55v-1.1zM12.45 6.95l1.4.72-.78.78zM17.55 12.05l-1.4-.72.78-.78zM12.45 12.05l.62-1.5.78.78zM17.55 6.95l-.62 1.5-.78-.78z"/></g></svg>Your partner in the pursuit of freedom.</p>
+    </div>
+    <div class="legal">
+      <p>This page summarises publicly reported information about a programme that has not yet opened. It is not legal, tax or investment advice, and it is not an offer. Figures are those announced by the Argentine government on 2 October 2026 and may change in the implementing regulation.</p>
+      <p>Last reviewed 3 October 2026.</p>
+    </div>
+  </div>
+</footer>
+
+<div class="sticky" id="stickyBar">
+  <div class="wrap">
+    <p><b>Applications open in the fourth quarter of 2026.</b> Places in the first intake are being held now.</p>
+    <a class="btn btn-primary" href="#register">Request priority access</a>
+  </div>
+</div>
+
+<script>
+/* ============================================================
+   FORM ENDPOINT
+   Replace with your Formspree / webhook URL. Leave empty to
+   simulate a successful send without posting anywhere.
+   ============================================================ */
+const FORM_ENDPOINT = "";
+
+(function(){
+  "use strict";
+
+  /* reveal on scroll */
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var rv = document.querySelectorAll('.rv');
+  if(reduce || !('IntersectionObserver' in window)){
+    rv.forEach(function(el){ el.classList.add('in'); });
+  } else {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    },{rootMargin:'0px 0px -8% 0px',threshold:.08});
+    rv.forEach(function(el){ io.observe(el); });
+  }
+
+  /* sticky bar: show after the figures section, hide over the form */
+  var bar = document.getElementById('stickyBar');
+  var figures = document.getElementById('figures');
+  var register = document.getElementById('register');
+  var pastFigures = false, atForm = false;
+  function sync(){ bar.classList.toggle('show', pastFigures && !atForm); }
+
+  if('IntersectionObserver' in window){
+    new IntersectionObserver(function(es){
+      pastFigures = es[0].boundingClientRect.top < 0 && !es[0].isIntersecting;
+      sync();
+    },{threshold:0}).observe(figures);
+
+    new IntersectionObserver(function(es){
+      atForm = es[0].isIntersecting;
+      sync();
+    },{threshold:0}).observe(register);
+  }
+
+  /* form */
+  var form = document.getElementById('priorityForm');
+  var host = document.getElementById('formHost');
+  var btn  = document.getElementById('submitBtn');
+
+  function fieldOf(input){ return input.closest('.field'); }
+
+  function validate(input){
+    var ok = input.checkValidity();
+    var f = fieldOf(input);
+    if(f) f.classList.toggle('invalid', !ok);
+    return ok;
+  }
+
+  form.querySelectorAll('input,select,textarea').forEach(function(el){
+    el.addEventListener('blur', function(){ if(el.value || el.required) validate(el); });
+    el.addEventListener('input', function(){
+      var f = fieldOf(el);
+      if(f && f.classList.contains('invalid')) validate(el);
+    });
+  });
+
+  form.addEventListener('submit', function(ev){
+    ev.preventDefault();
+    var controls = Array.prototype.slice.call(form.querySelectorAll('input,select,textarea'));
+    var firstBad = null;
+    controls.forEach(function(el){
+      if(!validate(el) && !firstBad) firstBad = el;
+    });
+    if(firstBad){ firstBad.focus(); return; }
+
+    btn.disabled = true;
+    var original = btn.textContent;
+    btn.textContent = 'Registering your place';
+
+    var payload = {};
+    new FormData(form).forEach(function(v,k){ payload[k] = v; });
+    payload.page = 'argentina-cbi';
+    payload.submitted_at = new Date().toISOString();
+
+    function done(){
+      host.classList.add('is-sent');
+      document.getElementById('sentMsg').focus &&
+        document.getElementById('sentMsg').setAttribute('tabindex','-1');
+      document.getElementById('sentMsg').focus();
+    }
+    function fail(){
+      btn.disabled = false;
+      btn.textContent = original;
+      alert('We could not register your place just now. Please try again, or write to us directly.');
+    }
+
+    if(!FORM_ENDPOINT){ setTimeout(done, 650); return; }
+
+    fetch(FORM_ENDPOINT,{
+      method:'POST',
+      headers:{'Content-Type':'application/json','Accept':'application/json'},
+      body:JSON.stringify(payload)
+    }).then(function(r){ r.ok ? done() : fail(); }).catch(fail);
+  });
+})();
+</script>
+</body>
+</html>
